@@ -1,0 +1,7 @@
+{
+    "name": "spark-custom-data-sources-server",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+	}
+}

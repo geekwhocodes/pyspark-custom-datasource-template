@@ -1,0 +1,47 @@
+[project]
+name = "source-faker"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "geekwhocodes",email = "ganeshraskar@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyspark (==4.0.0.dev2)",
+    "faker (>=36.1.1,<37.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "source_faker", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+black = "^25.1.0"
+isort = "^6.0.0"
+flake8 = "^7.1.2"
+mypy = "^1.15.0"
+pre-commit = "^4.1.0"
+pyarrow = "^19.0.1"
+grpcio = "^1.70.0"
+grpcio-status = "^1.60.1"
+pandas = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+
+[tool.flake8]
+max-line-length = 88

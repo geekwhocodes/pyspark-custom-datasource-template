@@ -12,8 +12,6 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir --upgrade pip \
   && pip install --no-cache-dir -r requirements.txt
 
-RUN poetry config virtualenvs.in-project true
-RUN poetry config virtualenvs.create true
   
 
 

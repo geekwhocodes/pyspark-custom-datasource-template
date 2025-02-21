@@ -9,7 +9,8 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "pyspark (==4.0.0.dev2)",
-    "faker (>=36.1.1,<37.0.0)"
+    "faker (>=36.1.1,<37.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)"
 ]
 
 [tool.poetry]

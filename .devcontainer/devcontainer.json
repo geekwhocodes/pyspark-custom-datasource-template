@@ -3,5 +3,22 @@
     "build": {
         "dockerfile": "Dockerfile",
         "context": "."
-	}
+    },
+    "postStartCommand": "bash -i /workspace/scripts/init-env.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-python.autopep8",
+                "dbaeumer.vscode-eslint",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.vscode-jupyter-cell-tags",
+                "ms-toolsai.jupyter-renderers",
+                "ms-toolsai.vscode-jupyter-slideshow",
+                "ms-toolsai.jupyter-keymap"
+            ]
+        }
+    }
 }

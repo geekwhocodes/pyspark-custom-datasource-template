@@ -2,7 +2,29 @@
 
 This repository provides a template for creating a custom data source for Apache PySpark. It is designed to help developers extend PySpark’s data source API to support custom data ingestion and storage mechanisms.
 
-> Sample fake source is copied from [Microsoft Learn](https://learn.microsoft.com/en-us/azure/databricks/pyspark/datasources)
+
+## Motivation
+
+When developing custom PySpark data sources, I encountered several challenges that made the development process frustrating:
+
+1. **Environment Setup Complexity**: Setting up a development environment for PySpark data source development was unnecessarily complex, with multiple dependencies and version conflicts.
+
+2. **Test Data Management**: Managing test data and maintaining consistent test environments across different machines was challenging.
+
+3. **Debugging Issues**: The default setup made it difficult to debug custom data source code effectively, especially when dealing with Spark's distributed nature.
+
+4. **Documentation Gaps**: Existing documentation for custom data source development was scattered and often incomplete.
+
+This template repository aims to solve these pain points and provide a streamlined development experience.
+
+
+## Features
+
+- Pre-configured development environment
+- Ready-to-use test infrastructure
+- Example implementation
+- Automated tests setup
+- Debug-friendly configuration
 
 ## Getting Started
 
@@ -118,7 +140,24 @@ To replace the fake data source with your own:
 
 4. **Modify the schema and options in `source.py` to fit your use case.**
 
+### References
+1. [Microsoft Learn - PySpark custom data sources](https://learn.microsoft.com/en-us/azure/databricks/pyspark/datasources)
+
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+### Contact
+
+For issues and questions, please use the GitHub Issues section.
+
+
+### Need Help Setting Up a Data Intelligence Platform with Databricks?
+If you need expert guidance on setting up a modern data intelligence platform using Databricks, we can help. Our consultancy specializes in:
+
+- Custom data source development for Databricks and Apache Spark
+- Optimizing ETL pipelines for performance and scalability
+- Data governance and security using Unity Catalog
+- Building ML & AI solutions on Databricks
+
+🚀 [Contact us](https://www.linkedin.com/in/geekwhocodes/) for a consultation and take your data platform to the next level.
